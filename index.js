@@ -18,7 +18,7 @@ document.getElementById('connect').addEventListener('click', async function(){
 
 const readcommand = async () => {
     try {
-        const response = await fetch('https://dev.smartsensordevices.com/bleuio_ra_api/api.php/readcommand',{
+        const response = await fetch('https://yoursiteurl/api.php/readcommand',{
             method: "GET"
           });
          const data = await response.json();
@@ -33,7 +33,7 @@ const stopProcess =()=>{
 }
 const writeResponse = async (res) => {
     try {
-        const response = await fetch('https://dev.smartsensordevices.com/bleuio_ra_api/api.php/senddongleresponse', {
+        const response = await fetch('https://yoursiteurl/api.php/senddongleresponse', {
             method: 'POST',        
             body: JSON.stringify({
                 response: JSON.stringify(res)

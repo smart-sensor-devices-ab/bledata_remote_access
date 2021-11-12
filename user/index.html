@@ -37,7 +37,7 @@
       const writeCmd = async (res) => {
         try {
           const response = await fetch(
-            "https://dev.smartsensordevices.com/bleuio_ra_api/api.php/writetodongle",
+            "https://yoursiteurl/api.php/writetodongle",
             {
               method: "POST",
               body: JSON.stringify({
@@ -54,7 +54,7 @@
       const readResponse = async () => {
         try {
           const response = await fetch(
-            "https://dev.smartsensordevices.com/bleuio_ra_api/api.php/getdongleresponse",
+            "https://yoursiteurl/api.php/getdongleresponse",
             {
               method: "GET",
             }
